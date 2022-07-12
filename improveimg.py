@@ -1,0 +1,11 @@
+from PIL import Image, ImageEnhance
+
+images = ["testpoor1.jpeg", "testpoor2.jpeg", "testpoor3.jpeg","testpoor4.jpeg", "testpoor5.jpeg", "testpoor6.jpeg", "testpoor7.jpeg", "testpoor8.jpeg", "testpoor9.jpeg","testpoor10.jpeg", "testpoor11.jpeg", "testpoor12.jpeg", "testpoor13.jpeg","testpoor14.jpeg", "testpoor15.jpeg", "testpoor16.jpeg", "testpoor17.jpeg", "testpoor18.jpeg", "testpoor19.jpeg","testpoor20.jpeg", "testpoor21.jpeg", "testpoor22.jpeg", "testpoor23.jpeg","testpoor24.jpeg", "testpoor25.jpeg", "testpoor26.jpeg", "testpoor27.jpeg", "testpoor28.jpeg", "testpoor29.jpeg","testpoor30.jpeg", "testpoor31.jpeg", "testpoor32.jpeg", "testpoor33.jpeg","testpoor34.jpeg", "testpoor35.jpeg", "testpoor36.jpeg", "testpoor37.jpeg", "testpoor38.jpeg", "testpoor39.jpeg","testpoor40.jpeg", "testpoor41.jpeg", "testpoor42.jpeg", "testpoor43.jpeg","testpoor44.jpeg", "testpoor45.jpeg", "testpoor46.jpeg", "testpoor47.jpeg", "testpoor48.jpeg", "testpoor49.jpeg","testpoor50.jpeg", "testpoor51.jpeg", "testpoor52.jpeg", "testpoor53.jpeg","testpoor54.jpeg", "testpoor55.jpeg", "testpoor56.jpeg", "testpoor57.jpeg", "testpoor58.jpeg", "testpoor59.jpeg","testpoor60.jpeg", "testpoor61.jpeg", "testpoor62.jpeg", "testpoor63.jpeg","testpoor64.jpeg", "testpoor65.jpeg", "testpoor66.jpeg", "testpoor67.jpeg", "testpoor68.jpeg", "testpoor69.jpeg","testpoor70.jpeg", "testpoor71.jpeg", "testpoor72.jpeg", "testpoor73.jpeg","testpoor74.jpeg", "testpoor75.jpeg", "testpoor76.jpeg", "testpoor77.jpeg", "testpoor78.jpeg", "testpoor79.jpeg","testpoor80.jpeg", "testpoor81.jpeg", "testpoor82.jpeg", "testpoor83.jpeg","testpoor84.jpeg", "testpoor85.jpeg", "testpoor86.jpeg", "testpoor87.jpeg", "testpoor88.jpeg", "testpoor89.jpeg","testpoor90.jpeg", "testpoor91.jpeg", "testpoor92.jpeg", "testpoor93.jpeg","testpoor94.jpeg", "testpoor95.jpeg", "testpoor96.jpeg", "testpoor97.jpeg", "testpoor98.jpeg", "testpoor99.jpeg","testpoor100.jpeg"]
+for x in images:
+    file = x
+    img = Image.open(file)
+    filtero = ImageEnhance.Contrast(img)
+    new_image = filtero.enhance(1.1)
+    filtero = ImageEnhance.Sharpness(new_image1)
+    new_image2 = filtero.enhance(1.5)
+    new_image2.show()
